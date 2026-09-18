@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Soweto Meat Lovers | Gallery</title>
+
+    <link rel="stylesheet" href="Css/style.css">
+
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <header class="navbar">
+
+        <a href="Home.html" class="logo">
+            <img src="Images/logo.jpg" alt="Soweto Meat Lovers Logo">
+        </a>
+
+        <nav id="navMenu">
+
+            <a href="Home.html">Home</a>
+
+            <a href="About Us.html">About Us</a>
+
+            <a href="Services.html">Services</a>
+
+            <a href="Gallery.html" class="active">Gallery</a>
+
+            <a href="Contact Us.html">Contact</a>
+
+        </nav>
+
+        <button class="menu-btn" onclick="toggleMenu()">
+            ☰
+        </button>
+
+    </header>
+
+
+    <!-- GALLERY HERO -->
+
+    <section class="page-hero gallery-hero">
+
+        <div class="page-hero-content">
+
+            <p class="eyebrow">
+                SEE THE EXPERIENCE
+            </p>
+
+            <h1>
+                OUR
+                <span>GALLERY.</span>
+            </h1>
+
+            <p>
+                A glimpse into the Soweto Meat Lovers experience.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <main>
+
+        <!-- GALLERY INTRO -->
+
+        <section class="gallery-intro">
+
+            <p class="eyebrow">
+                SOWETO MEAT LOVERS
+            </p>
+
+            <h2>
+                MOMENTS WORTH
+                <span>REMEMBERING.</span>
+            </h2>
+
+            <p>
+                From great food to unforgettable gatherings,
+                here's a look at what makes the Soweto Meat
+                Lovers experience special.
+            </p>
+
+        </section>
+
+
+        <!-- GALLERY -->
+
+        <section class="gallery-grid">
+
+
+            <div class="gallery-item large"
+                 onclick="openLightbox(this)">
+
+                <img src="Images/images%20(1).jpg"
+                     alt="Soweto Meat Lovers Event">
+
+                <div class="gallery-caption">
+                    <span>01</span>
+                    <h3>THE EXPERIENCE</h3>
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item"
+                 onclick="openLightbox(this)">
+
+                <img src="Images/images%20(2).jpg"
+                     alt="Soweto Meat Lovers Venue">
+
+                <div class="gallery-caption">
+                    <span>02</span>
+                    <h3>THE VENUE</h3>
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item"
+                 onclick="openLightbox(this)">
+
+                <img src="Images/images%20(3).jpg"
+                     alt="Soweto Meat Lovers Food">
+
+                <div class="gallery-caption">
+                    <span>03</span>
+                    <h3>THE FOOD</h3>
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item"
+                 onclick="openLightbox(this)">
+
+                <img src="Images/images%20(4).jpg"
+                     alt="Soweto Meat Lovers Menu">
+
+                <div class="gallery-caption">
+                    <span>04</span>
+                    <h3>THE MENU</h3>
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item large"
+                 onclick="openLightbox(this)">
+
+                <img src="Images/images%20(5).jpg"
+                     alt="Soweto Meat Lovers">
+
+                <div class="gallery-caption">
+                    <span>05</span>
+                    <h3>GOOD TIMES</h3>
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- CTA -->
+
+        <section class="gallery-cta">
+
+            <p class="eyebrow">
+                WANT TO EXPERIENCE IT YOURSELF?
+            </p>
+
+            <h2>
+                COME JOIN
+                <span>THE EXPERIENCE.</span>
+            </h2>
+
+            <a href="Contact Us.html"
+               class="gold-button">
+
+                GET IN TOUCH →
+
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- LIGHTBOX -->
+
+    <div id="lightbox"
+         class="lightbox"
+         onclick="closeLightbox(event)">
+
+        <button class="close-lightbox"
+                onclick="closeLightbox(event)">
+            ×
+        </button>
+
+        <img id="lightboxImage"
+             src=""
+             alt="">
+
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-grid">
+
+            <div>
+
+                <h3>
+                    SOWETO MEAT LOVERS
+                </h3>
+
+                <p>
+                    Quality meat. Great flavour.
+                    Good people.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    QUICK LINKS
+                </h4>
+
+                <a href="Home.html">Home</a>
+                <a href="About Us.html">About Us</a>
+                <a href="Services.html">Services</a>
+                <a href="Gallery.html">Gallery</a>
+                <a href="Contact Us.html">Contact</a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    LOCATION
+                </h4>
+
+                <p>
+                    Soweto, Johannesburg
+                </p>
+
+                <p>
+                    South Africa
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 Soweto Meat Lovers.
+            All Rights Reserved.
+
+        </div>
+
+    </footer>
+
+
+    <script src="JavaScript/script.js"></script>
+
+</body>
+
+</html>
