@@ -5,59 +5,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Soweto Meat Lovers | Home</title>
+    <title>Soweto Meat Lovers | Quality, Flavour & Community</title>
+
+    <meta name="description"
+          content="Welcome to Soweto Meat Lovers in Soweto, Johannesburg. Discover quality food, great flavour and memorable experiences.">
+
+    <meta name="keywords"
+          content="Soweto Meat Lovers, Soweto food, quality meat, food experiences, Johannesburg">
+
+    <meta name="author" content="Soweto Meat Lovers">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0b0b0b">
 
     <link rel="stylesheet" href="Css/style.css">
 </head>
 
-<body>
+<body class="home-page">
 
     <!-- NAVIGATION -->
     <header class="navbar">
 
-        <a href="Home.html" class="logo">
-            <img src="Images/logo.jpg" alt="Soweto Meat Lovers Logo">
+        <a href="Home.html" class="logo"
+           aria-label="Soweto Meat Lovers home">
+
+            <img src="Images/logo.jpg"
+                 alt="Soweto Meat Lovers logo">
+
         </a>
 
-        <nav id="navMenu">
-            <a href="Home.html" class="active">Home</a>
+        <nav id="navMenu" aria-label="Main navigation">
+
+            <a href="Home.html"
+               class="active"
+               aria-current="page">Home</a>
+
             <a href="About Us.html">About Us</a>
             <a href="Services.html">Services</a>
             <a href="Gallery.html">Gallery</a>
             <a href="Contact Us.html">Contact</a>
+
         </nav>
 
-        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        <button class="menu-btn"
+                type="button"
+                onclick="toggleMenu()"
+                aria-label="Open navigation menu"
+                aria-controls="navMenu"
+                aria-expanded="false">
+            ☰
+        </button>
 
     </header>
 
 
-    <!-- HERO VIDEO -->
-    <section class="hero">
+    <!-- HOME HERO -->
+    <section class="home-hero">
 
-        <video autoplay muted loop playsinline>
+        <video class="home-hero-video"
+               autoplay
+               muted
+               loop
+               playsinline
+               poster="Images/images%20(1).jpg"
+               aria-hidden="true">
 
             <source src="Images/video.mp4" type="video/mp4">
 
-            Your browser does not support the video.
-
         </video>
 
-        <div class="hero-overlay"></div>
+        <div class="home-hero-overlay"></div>
 
-        <div class="hero-text">
+        <div class="home-hero-content">
 
-            <p>WELCOME TO</p>
+            <p class="home-eyebrow">
+                QUALITY • FLAVOUR • COMMUNITY
+            </p>
 
             <h1>
-                SOWETO
-                <span>MEAT LOVERS</span>
+                MORE THAN
+                <span>JUST MEAT.</span>
             </h1>
 
-            <a href="#discover" class="gold-button">
-                DISCOVER MORE →
-            </a>
+            <p class="home-hero-description">
+                Quality meat. Great flavour. Good people.
+                Experience the spirit of Soweto Meat Lovers.
+            </p>
 
+            <div class="home-hero-buttons">
+
+                <a href="Services.html" class="home-gold-button">
+                    EXPLORE OUR SERVICES →
+                </a>
+
+                <a href="Contact Us.html" class="home-outline-button">
+                    GET IN TOUCH
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="home-scroll-indicator">
+            DISCOVER MORE <span>↓</span>
         </div>
 
     </section>
@@ -65,177 +114,176 @@
 
     <main>
 
-        <!-- INTRODUCTION -->
-        <section class="intro" id="discover">
+        <!-- BRAND INTRODUCTION -->
+        <section class="home-intro">
 
-            <div class="intro-content">
+            <div class="home-intro-content">
 
-                <p class="eyebrow">
-                    QUALITY • FLAVOUR • COMMUNITY
-                </p>
+                <p class="home-eyebrow">WELCOME TO SOWETO MEAT LOVERS</p>
 
                 <h2>
                     MORE THAN
-                    <br>
                     <span>JUST MEAT.</span>
                 </h2>
 
-                <p class="intro-text">
-
-                    A passion for quality meat, great flavour
-                    and bringing people together.
-
-                    Soweto Meat Lovers is about creating
-                    memorable food experiences.
-
+                <p>
+                    At Soweto Meat Lovers, great food brings people
+                    together. We celebrate quality, flavour and the
+                    moments that make every gathering special.
                 </p>
 
-                <a href="About Us.html" class="gold-button">
-                    OUR STORY →
+                <a href="About Us.html" class="home-gold-button">
+                    DISCOVER OUR STORY →
                 </a>
 
             </div>
 
+            <div class="home-intro-image">
 
-            <div class="intro-image">
-
-                <img src="Images/images%20(3).jpg"
-                     alt="Soweto Meat Lovers Food">
+                <img src="Images/images%20(1).jpg"
+                     alt="A moment from the Soweto Meat Lovers experience"
+                     loading="lazy">
 
             </div>
 
         </section>
 
 
-        <!-- SERVICES -->
-        <section class="services">
+        <!-- SERVICES PREVIEW -->
+        <section class="home-services">
 
-            <div class="section-heading">
+            <div class="home-section-heading">
 
-                <p class="eyebrow">
-                    WHAT WE OFFER
-                </p>
+                <p class="home-eyebrow">WHAT WE OFFER</p>
 
                 <h2>
                     MADE FOR
-                    <span>MEAT LOVERS.</span>
-                </h2>
-
-            </div>
-
-
-            <div class="service-grid">
-
-
-                <article class="service-card">
-
-                    <img src="Images/images%20(3).jpg"
-                         alt="Food">
-
-                    <div class="service-info">
-
-                        <span>01</span>
-
-                        <h3>QUALITY FOOD</h3>
-
-                        <p>
-                            Great food made for people
-                            who appreciate great flavour.
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <article class="service-card">
-
-                    <img src="Images/images%20(2).jpg"
-                         alt="Soweto Meat Lovers Venue">
-
-                    <div class="service-info">
-
-                        <span>02</span>
-
-                        <h3>GREAT VENUES</h3>
-
-                        <p>
-                            The perfect environment for
-                            gatherings and memorable moments.
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <article class="service-card">
-
-                    <img src="Images/images%20(1).jpg"
-                         alt="Soweto Meat Lovers Event">
-
-                    <div class="service-info">
-
-                        <span>03</span>
-
-                        <h3>EVENTS</h3>
-
-                        <p>
-                            Creating experiences that bring
-                            people together.
-                        </p>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-
-            <div class="services-link">
-
-                <a href="Services.html" class="gold-button">
-                    VIEW SERVICES →
-                </a>
-
-            </div>
-
-        </section>
-
-
-        <!-- FEATURED -->
-        <section class="featured">
-
-            <div class="featured-image">
-
-                <img src="Images/images%20(5).jpg"
-                     alt="Soweto Meat Lovers Venue">
-
-            </div>
-
-
-            <div class="featured-content">
-
-                <p class="eyebrow">
-                    THE SOWETO EXPERIENCE
-                </p>
-
-                <h2>
-                    GOOD FOOD.
-                    <br>
-                    GOOD PEOPLE.
-                    <br>
                     <span>GOOD TIMES.</span>
                 </h2>
 
                 <p>
-                    Food is about more than what is on
-                    the plate. It is about the people,
-                    the stories and the memories.
+                    Discover the food and experiences that bring
+                    people together.
                 </p>
 
-                <a href="Contact Us.html" class="gold-button">
-                    GET IN TOUCH →
+            </div>
+
+            <div class="home-services-grid">
+
+                <article class="home-service-card">
+
+                    <img src="Images/images%20(3).jpg"
+                         alt="Food featured by Soweto Meat Lovers"
+                         loading="lazy">
+
+                    <div class="home-service-content">
+
+                        <span>01 / FOOD</span>
+
+                        <h3>QUALITY FOOD.</h3>
+
+                        <p>
+                            Great experiences start with great food,
+                            quality and flavour.
+                        </p>
+
+                        <a href="Services.html">
+                            EXPLORE SERVICES →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="home-service-card">
+
+                    <img src="Images/images%20(2).jpg"
+                         alt="Soweto Meat Lovers venue"
+                         loading="lazy">
+
+                    <div class="home-service-content">
+
+                        <span>02 / EXPERIENCE</span>
+
+                        <h3>GOOD COMPANY.</h3>
+
+                        <p>
+                            Bring people together and create
+                            moments worth remembering.
+                        </p>
+
+                        <a href="Services.html">
+                            DISCOVER MORE →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="home-service-card">
+
+                    <img src="Images/images%20(5).jpg"
+                         alt="A gathering at Soweto Meat Lovers"
+                         loading="lazy">
+
+                    <div class="home-service-content">
+
+                        <span>03 / EVENTS</span>
+
+                        <h3>MEMORABLE MOMENTS.</h3>
+
+                        <p>
+                            Make every gathering an experience
+                            worth sharing.
+                        </p>
+
+                        <a href="Services.html">
+                            VIEW OUR SERVICES →
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- FEATURED SECTION -->
+        <section class="home-featured">
+
+            <div class="home-featured-image">
+
+                <img src="Images/images%20(4).jpg"
+                     alt="Soweto Meat Lovers food and menu"
+                     loading="lazy">
+
+            </div>
+
+            <div class="home-featured-content">
+
+                <p class="home-eyebrow">
+                    THE SOWETO MEAT LOVERS EXPERIENCE
+                </p>
+
+                <h2>
+                    QUALITY.
+                    <br>
+                    FLAVOUR.
+                    <br>
+                    <span>COMMUNITY.</span>
+                </h2>
+
+                <p>
+                    More than a meal, it is about bringing people
+                    together and creating moments worth remembering.
+                </p>
+
+                <a href="Gallery.html" class="home-gold-button">
+                    VIEW OUR GALLERY →
                 </a>
 
             </div>
@@ -243,34 +291,89 @@
         </section>
 
 
-        <!-- MENU PREVIEW -->
-        <section class="menu-preview">
+        <!-- GALLERY PREVIEW -->
+        <section class="home-gallery">
 
-            <div>
+            <div class="home-section-heading">
 
-                <p class="eyebrow">
-                    SOMETHING FOR EVERYONE
-                </p>
+                <p class="home-eyebrow">A CLOSER LOOK</p>
 
                 <h2>
-                    TAKE A LOOK
-                    <span>AT OUR MENU.</span>
+                    SEE THE
+                    <span>EXPERIENCE.</span>
                 </h2>
 
                 <p>
-                    Discover what Soweto Meat Lovers
-                    has to offer.
+                    Take a look at moments from Soweto Meat Lovers.
                 </p>
 
-                <a href="Gallery.html" class="gold-button">
-                    EXPLORE →
+            </div>
+
+            <div class="home-gallery-grid">
+
+                <a href="Gallery.html" class="home-gallery-item">
+
+                    <img src="Images/images%20(1).jpg"
+                         alt="Soweto Meat Lovers experience"
+                         loading="lazy">
+
+                    <span>THE EXPERIENCE</span>
+
+                </a>
+
+                <a href="Gallery.html" class="home-gallery-item">
+
+                    <img src="Images/images%20(3).jpg"
+                         alt="Food at Soweto Meat Lovers"
+                         loading="lazy">
+
+                    <span>THE FOOD</span>
+
+                </a>
+
+                <a href="Gallery.html" class="home-gallery-item">
+
+                    <img src="Images/images%20(5).jpg"
+                         alt="Soweto Meat Lovers gathering"
+                         loading="lazy">
+
+                    <span>GOOD TIMES</span>
+
                 </a>
 
             </div>
 
+            <div class="home-gallery-link">
 
-            <img src="Images/images%20(4).jpg"
-                 alt="Soweto Meat Lovers Menu">
+                <a href="Gallery.html" class="home-gold-button">
+                    VIEW ALL PHOTOS →
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT CTA -->
+        <section class="home-contact-cta">
+
+            <p class="home-eyebrow">
+                YOUR NEXT EXPERIENCE STARTS HERE
+            </p>
+
+            <h2>
+                LET'S MAKE
+                <span>IT MEMORABLE.</span>
+            </h2>
+
+            <p>
+                Have a question or want to find out more?
+                Get in touch with Soweto Meat Lovers.
+            </p>
+
+            <a href="Contact Us.html" class="home-gold-button">
+                CONTACT US →
+            </a>
 
         </section>
 
@@ -283,19 +386,15 @@
         <div class="footer-grid">
 
             <div>
-
                 <h3>SOWETO MEAT LOVERS</h3>
 
                 <p>
                     Quality meat. Great flavour.
                     Good people.
                 </p>
-
             </div>
 
-
             <div>
-
                 <h4>QUICK LINKS</h4>
 
                 <a href="Home.html">Home</a>
@@ -303,27 +402,19 @@
                 <a href="Services.html">Services</a>
                 <a href="Gallery.html">Gallery</a>
                 <a href="Contact Us.html">Contact</a>
-
             </div>
 
-
             <div>
-
                 <h4>LOCATION</h4>
 
                 <p>Soweto, Johannesburg</p>
                 <p>South Africa</p>
-
             </div>
 
         </div>
 
-
         <div class="copyright">
-
-            © 2026 Soweto Meat Lovers.
-            All Rights Reserved.
-
+            &copy; 2026 Soweto Meat Lovers. All Rights Reserved.
         </div>
 
     </footer>
@@ -332,5 +423,4 @@
     <script src="JavaScript/script.js"></script>
 
 </body>
-
 </html>

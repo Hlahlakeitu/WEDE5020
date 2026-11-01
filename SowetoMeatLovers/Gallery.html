@@ -2,41 +2,47 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Soweto Meat Lovers | Gallery</title>
+    <title>Soweto Meat Lovers | Food and Events Gallery</title>
+
+    <meta name="description"
+          content="Explore the Soweto Meat Lovers gallery featuring food, events, venue and memorable experiences in Soweto, Johannesburg.">
+
+    <meta name="keywords"
+          content="Soweto Meat Lovers gallery, Soweto food, food events, Johannesburg">
+
+    <meta name="author" content="Soweto Meat Lovers">
 
     <link rel="stylesheet" href="Css/style.css">
-
 </head>
 
 <body>
 
     <!-- NAVIGATION -->
-
     <header class="navbar">
 
         <a href="Home.html" class="logo">
-            <img src="Images/logo.jpg" alt="Soweto Meat Lovers Logo">
+            <img src="Images/logo.jpg" alt="Soweto Meat Lovers logo">
         </a>
 
-        <nav id="navMenu">
+        <nav id="navMenu" aria-label="Main navigation">
 
             <a href="Home.html">Home</a>
-
             <a href="About Us.html">About Us</a>
-
             <a href="Services.html">Services</a>
-
-            <a href="Gallery.html" class="active">Gallery</a>
-
+            <a href="Gallery.html" class="active" aria-current="page">Gallery</a>
             <a href="Contact Us.html">Contact</a>
 
         </nav>
 
-        <button class="menu-btn" onclick="toggleMenu()">
+        <button class="menu-btn"
+                type="button"
+                onclick="toggleMenu()"
+                aria-label="Open navigation menu"
+                aria-controls="navMenu"
+                aria-expanded="false">
             ☰
         </button>
 
@@ -44,14 +50,11 @@
 
 
     <!-- GALLERY HERO -->
-
     <section class="page-hero gallery-hero">
 
         <div class="page-hero-content">
 
-            <p class="eyebrow">
-                SEE THE EXPERIENCE
-            </p>
+            <p class="eyebrow">SEE THE EXPERIENCE</p>
 
             <h1>
                 OUR
@@ -70,12 +73,9 @@
     <main>
 
         <!-- GALLERY INTRO -->
-
         <section class="gallery-intro">
 
-            <p class="eyebrow">
-                SOWETO MEAT LOVERS
-            </p>
+            <p class="eyebrow">SOWETO MEAT LOVERS</p>
 
             <h2>
                 MOMENTS WORTH
@@ -91,16 +91,83 @@
         </section>
 
 
-        <!-- GALLERY -->
+        <!-- SEARCH AND FILTER -->
+        <section class="gallery-controls"
+                 aria-label="Gallery search and filters">
 
-        <section class="gallery-grid">
+            <label for="gallerySearch">
+                SEARCH THE GALLERY
+            </label>
 
+            <input
+                type="search"
+                id="gallerySearch"
+                placeholder="Search food, events, venue..."
+                autocomplete="off"
+            >
+
+            <p class="gallery-filter-heading">
+                FILTER BY CATEGORY
+            </p>
+
+            <div class="gallery-filter-buttons">
+
+                <button type="button"
+                        class="gallery-filter active"
+                        data-filter="all"
+                        aria-pressed="true">
+                    All
+                </button>
+
+                <button type="button"
+                        class="gallery-filter"
+                        data-filter="events"
+                        aria-pressed="false">
+                    Events
+                </button>
+
+                <button type="button"
+                        class="gallery-filter"
+                        data-filter="venue"
+                        aria-pressed="false">
+                    Venue
+                </button>
+
+                <button type="button"
+                        class="gallery-filter"
+                        data-filter="food"
+                        aria-pressed="false">
+                    Food
+                </button>
+
+                <button type="button"
+                        class="gallery-filter"
+                        data-filter="menu"
+                        aria-pressed="false">
+                    Menu
+                </button>
+
+            </div>
+
+            <p id="galleryResult"
+               class="gallery-result"
+               aria-live="polite">
+                Showing all 5 images.
+            </p>
+
+        </section>
+
+
+        <!-- GALLERY GRID -->
+        <section class="gallery-grid" aria-label="Gallery images">
 
             <div class="gallery-item large"
+                 data-category="events"
                  onclick="openLightbox(this)">
 
                 <img src="Images/images%20(1).jpg"
-                     alt="Soweto Meat Lovers Event">
+                     alt="Soweto Meat Lovers event experience"
+                     loading="lazy">
 
                 <div class="gallery-caption">
                     <span>01</span>
@@ -111,10 +178,12 @@
 
 
             <div class="gallery-item"
+                 data-category="venue"
                  onclick="openLightbox(this)">
 
                 <img src="Images/images%20(2).jpg"
-                     alt="Soweto Meat Lovers Venue">
+                     alt="Soweto Meat Lovers venue"
+                     loading="lazy">
 
                 <div class="gallery-caption">
                     <span>02</span>
@@ -125,10 +194,12 @@
 
 
             <div class="gallery-item"
+                 data-category="food"
                  onclick="openLightbox(this)">
 
                 <img src="Images/images%20(3).jpg"
-                     alt="Soweto Meat Lovers Food">
+                     alt="Food at Soweto Meat Lovers"
+                     loading="lazy">
 
                 <div class="gallery-caption">
                     <span>03</span>
@@ -139,10 +210,12 @@
 
 
             <div class="gallery-item"
+                 data-category="menu"
                  onclick="openLightbox(this)">
 
                 <img src="Images/images%20(4).jpg"
-                     alt="Soweto Meat Lovers Menu">
+                     alt="Soweto Meat Lovers menu"
+                     loading="lazy">
 
                 <div class="gallery-caption">
                     <span>04</span>
@@ -153,10 +226,12 @@
 
 
             <div class="gallery-item large"
+                 data-category="events"
                  onclick="openLightbox(this)">
 
                 <img src="Images/images%20(5).jpg"
-                     alt="Soweto Meat Lovers">
+                     alt="Good times at Soweto Meat Lovers"
+                     loading="lazy">
 
                 <div class="gallery-caption">
                     <span>05</span>
@@ -165,12 +240,14 @@
 
             </div>
 
+            <p id="noGalleryResults" class="no-gallery-results" hidden>
+                No images match your search. Try another keyword or category.
+            </p>
 
         </section>
 
 
         <!-- CTA -->
-
         <section class="gallery-cta">
 
             <p class="eyebrow">
@@ -182,11 +259,8 @@
                 <span>THE EXPERIENCE.</span>
             </h2>
 
-            <a href="Contact Us.html"
-               class="gold-button">
-
+            <a href="Contact Us.html" class="gold-button">
                 GET IN TOUCH →
-
             </a>
 
         </section>
@@ -195,82 +269,61 @@
 
 
     <!-- LIGHTBOX -->
-
     <div id="lightbox"
          class="lightbox"
-         onclick="closeLightbox(event)">
+         onclick="closeLightbox(event)"
+         role="dialog"
+         aria-modal="true"
+         aria-label="Expanded gallery image"
+         aria-hidden="true">
 
         <button class="close-lightbox"
+                type="button"
+                aria-label="Close enlarged image"
                 onclick="closeLightbox(event)">
             ×
         </button>
 
-        <img id="lightboxImage"
-             src=""
-             alt="">
+        <img id="lightboxImage" src="" alt="">
 
     </div>
 
 
     <!-- FOOTER -->
-
     <footer>
 
         <div class="footer-grid">
 
             <div>
-
-                <h3>
-                    SOWETO MEAT LOVERS
-                </h3>
+                <h3>SOWETO MEAT LOVERS</h3>
 
                 <p>
                     Quality meat. Great flavour.
                     Good people.
                 </p>
-
             </div>
 
-
             <div>
-
-                <h4>
-                    QUICK LINKS
-                </h4>
+                <h4>QUICK LINKS</h4>
 
                 <a href="Home.html">Home</a>
                 <a href="About Us.html">About Us</a>
                 <a href="Services.html">Services</a>
                 <a href="Gallery.html">Gallery</a>
                 <a href="Contact Us.html">Contact</a>
-
             </div>
 
-
             <div>
+                <h4>LOCATION</h4>
 
-                <h4>
-                    LOCATION
-                </h4>
-
-                <p>
-                    Soweto, Johannesburg
-                </p>
-
-                <p>
-                    South Africa
-                </p>
-
+                <p>Soweto, Johannesburg</p>
+                <p>South Africa</p>
             </div>
 
         </div>
 
-
         <div class="copyright">
-
-            © 2026 Soweto Meat Lovers.
-            All Rights Reserved.
-
+            &copy; 2026 Soweto Meat Lovers. All Rights Reserved.
         </div>
 
     </footer>
@@ -279,5 +332,4 @@
     <script src="JavaScript/script.js"></script>
 
 </body>
-
 </html>
