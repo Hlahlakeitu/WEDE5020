@@ -1,83 +1,221 @@
 # WEDE5020
-# Soweto Meat Lovers Website
+SOWETO MEAT LOVERS WEBSITE
 
-## Project Overview
+1. Project Overview
 
-The Soweto Meat Lovers Website is a multi-page business website designed to provide customers with information about Soweto Meat Lovers, its services, products, location, and contact details.
+Soweto Meat Lovers is a responsive business website developed to showcase the brand, its services, food, events and customer contact information.
 
-The website was developed using HTML, CSS, and JavaScript, with a focus on creating a professional, responsive, and user-friendly experience.
+The website provides visitors with information about the business and allows potential customers to explore the gallery and submit enquiries through the contact form.
 
-## Project Purpose
+2. Project Objectives
 
-The purpose of this website is to:
+The main objectives of this project are to:
 
-- Introduce Soweto Meat Lovers to customers online.
-- Provide information about the business and its services.
-- Display images of the business and its products.
-- Provide customers with contact information.
-- Help customers locate the business using Google Maps.
-- Create a professional online presence for the business.
+Establish an online presence for Soweto Meat Lovers.
 
-## Technologies Used
+Present the business professionally.
 
-- HTML5
-- CSS3
-- JavaScript
-- Google Maps Embed
+Showcase food, events and the business experience.
 
-## Website Pages
+Allow visitors to navigate between different website pages.
 
-### Home
-The Home page introduces the business and provides an overview of the Soweto Meat Lovers brand.
+Provide a contact form for customer enquiries.
 
-### About Us
-Provides information about the business and its story.
+Improve the website's responsiveness, accessibility and usability.
 
-### Services
-Displays information about the services offered by Soweto Meat Lovers.
+3. Technologies Used
 
-### Gallery
-Showcases images related to the business.
+Technology
 
-### Contact Us
-Provides contact information and a Google Maps location for the business.
+Purpose
 
-## Main Features
+HTML5
 
-- Multi-page website
-- Responsive layout
-- Business logo
-- Business images
-- Promotional video
-- Navigation between pages
-- Google Maps integration
-- Interactive buttons and links
-- Hover effects
-- Responsive design for different screen sizes
+Website structure and content
 
-## Project Structure
+CSS3
 
-```text
-Soweto-Meat-Lovers/
-│
-├── Css/
-│   └── style.css
-│
-├── Images/
-│   ├── images (1).jpg
-│   ├── images (2).jpg
-│   ├── images (3).jpg
-│   ├── images (4).jpg
-│   ├── images (5).jpg
-│   ├── Logo
-│   └── Video
-│
-├── JavaScript/
-│   └── script.js
+Styling, layouts and animations
+
+JavaScript
+
+Interactive website functionality
+
+Visual Studio Code
+
+Development environment
+
+Live Server
+
+Local website testing
+
+GitHub
+
+Version control and project storage
+
+FormSubmit
+
+Contact form submission service
+
+4. Website Pages
+
+The website consists of five main pages:
+
+Home
+
+Introduces Soweto Meat Lovers through a hero section, business introduction, featured content and links to other pages.
+
+About Us
+
+Provides information about the business, its identity and values.
+
+Services
+
+Showcases the services and experiences offered by Soweto Meat Lovers.
+
+Gallery
+
+Displays images relating to the business, food, venue and events.
+
+Contact
+
+Provides contact information, a location map and an enquiry form.
+
+5. Part 3 Improvements
+
+The following improvements were implemented during the development process:
+
+User Experience
+
+Improved website navigation.
+
+Added responsive layouts for different screen sizes.
+
+Improved visual consistency across website pages.
+
+Added hover effects and transitions.
+
+Interactive Features
+
+Mobile navigation menu.
+
+Interactive image gallery.
+
+Gallery search functionality.
+
+Gallery category filters.
+
+Image lightbox for viewing enlarged images.
+
+Contact form validation.
+
+Form error messages.
+
+SEO and Accessibility
+
+Added descriptive page titles.
+
+Added meta descriptions.
+
+Improved image alternative text.
+
+Added accessible form labels.
+
+Added navigation accessibility attributes.
+
+Used semantic HTML elements.
+
+Contact Functionality
+
+The contact form uses JavaScript to validate customer information before submission.
+
+FormSubmit is used as the external form submission service.
+
+6. Project Folder Structure
+
+SowetoMeatLovers/
 │
 ├── Home.html
 ├── About Us.html
 ├── Services.html
 ├── Gallery.html
 ├── Contact Us.html
-└── README.md
+├── README.md
+├── improvements
+│
+├── Css/
+│   └── style.css
+│
+├── JavaScript/
+│   └── script.js
+│
+└── Images/
+    ├── logo.jpg
+    ├── video.mp4
+    ├── images (1).jpg
+    ├── images (2).jpg
+    ├── images (3).jpg
+    ├── images (4).jpg
+    └── images (5).jpg
+
+7. How to Run the Website
+
+Download or clone the project repository.
+
+Open the project folder in Visual Studio Code.
+
+Make sure all image, CSS and JavaScript files are in their correct folders.
+
+Open Home.html.
+
+Right-click and select Open with Live Server.
+
+Navigate through the website using the navigation menu.
+
+8. Testing
+
+The website should be tested for:
+
+Navigation between all five pages.
+
+Correct loading of images and video.
+
+Gallery category filtering.
+
+Gallery search functionality.
+
+Opening and closing the gallery lightbox.
+
+Contact form validation.
+
+Contact form submission.
+
+Mobile and tablet responsiveness.
+
+Correct display of page content.
+
+9. Future Improvements
+
+Possible future improvements include:
+
+Adding a customer booking system.
+
+Integrating a database.
+
+Creating an administration dashboard.
+
+Adding customer reviews.
+
+Adding more gallery images.
+
+Improving online business communication.
+
+10. Conclusion
+
+The Soweto Meat Lovers website provides a digital platform for presenting the business and its services.
+
+The project demonstrates the use of HTML, CSS and JavaScript to develop a multi-page website with interactive functionality, responsive design and improved user experience.
+
+
+
+
